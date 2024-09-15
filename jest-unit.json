@@ -1,0 +1,52 @@
+{
+  "verbose": true,
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "testRegex": ".*\\.spec\\.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "collectCoverageFrom": ["src/**/*.(t|j)s"],
+  "resetMocks": true,
+  "clearMocks": true,
+  "testTimeout": 15000,
+  "maxWorkers": 1,
+  "coveragePathIgnorePatterns": [
+    "./dist",
+    "./coverage",
+    "./coverage-e2e",
+    "./node_modules",
+    "./turbo",
+    "./test",
+    ".eslintrc.js",
+    "./*.module.ts",
+    "./index.ts",
+    "main.ts",
+    "tracing.ts",
+    "./static"
+  ],
+  "modulePathIgnorePatterns": [
+    "./dist",
+    "./coverage",
+    "./coverage-e2e",
+    "./node_modules",
+    "./turbo",
+    ".eslintrc.js",
+    "./*.module.ts",
+    "main.ts",
+    "tracing.ts",
+    "./static",
+    "./*.dto.ts",
+    "./*.interceptor.ts"
+  ],
+  "coverageDirectory": "./coverage",
+  "testEnvironment": "node",
+  "collectCoverage": true,
+  "coverageThreshold": {
+    "global": {
+      "branches": 57,
+      "functions": 97,
+      "lines": 97,
+      "statements": 97
+    }
+  }
+}
